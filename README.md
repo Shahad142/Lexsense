@@ -147,13 +147,10 @@ Lexsense/
 
 ## Future Improvements
 
-- [ ] Expand the glossary to cover more AI and machine learning terms.
-- [ ] Add a search and filter feature to quickly locate specific terms.
-- [ ] Allow users to contribute corrections or suggest better translations.
-- [ ] Export graph views or term definitions as PDF or printable format.
-- [ ] Add support for additional languages (e.g., Spanish, Chinese).
-- [ ] Improve mobile responsiveness and touch-based graph navigation.
-- [ ] Add user authentication to support saved sessions and personalized bookmarks.
+- Expand the glossary to cover more AI and machine learning terms.
+- Allow users to contribute corrections or suggest better translations.
+- Add support for additional languages (e.g., Spanish, Chinese).
+
 
 ---
 
