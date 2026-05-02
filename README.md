@@ -27,22 +27,24 @@ LexSense addresses this by:
 
 ## Features
 
-- **Interactive Knowledge Graph** — Visualize AI terms and the relationships between them in an explorable graph interface.
-- **Multilingual Support** — Full support for English, Arabic, and French, with language-aware display and layout.
+- **Interactive Knowledge Graph** — Visualize AI terms and the relationships between them in an explorable graph interface powered by Cytoscape.js.
+- **Multilingual Support** — Full support for English, Arabic (RTL), and French, with language-aware display and layout.
 - **Contextual Explanations** — Each term includes definitions, usage examples, and notes on semantic nuance.
 - **Translation Quality Flags** — Highlights terms where existing translations are considered unclear, misleading, or culturally imprecise.
 - **Term Relationships** — Explore how concepts connect to one another (e.g., *Neural Network → Deep Learning → Model*).
-- **Clean, Minimal UI** — Designed for usability without sacrificing depth of information.
+- **AI-Powered Layer** — Integrates Google Gemini AI to support dynamic, context-aware explanations.
+- **Clean, Minimal UI** — Built with Tailwind CSS and smooth Motion animations for a polished, distraction-free experience.
 
 ---
 
 ## How It Works
 
-1. **Data Preparation** — A multilingual AI glossary dataset was cleaned, structured, and enriched with explanations, examples, and relationship mappings.
+1. **Data Preparation** — A multilingual AI glossary dataset was cleaned, structured, and enriched with explanations, examples, and relationship mappings (stored in `metadata.json`).
 2. **Term Selection** — Key terms were curated based on relevance, frequency, and translation ambiguity.
 3. **Relationship Mapping** — Semantic and conceptual links between terms were defined to form a meaningful graph structure.
-4. **Graph Rendering** — The structured data is rendered as an interactive graph in the browser, allowing users to click, explore, and navigate between terms.
+4. **Graph Rendering** — The structured data is rendered as an interactive graph using Cytoscape.js via `react-cytoscapejs`, allowing users to click, explore, and navigate between terms.
 5. **Language Switching** — Users can toggle between supported languages; the graph and all annotations update accordingly.
+6. **AI Explanations** — Google Gemini provides on-demand, context-aware elaborations for selected terms.
 
 ---
 
@@ -50,14 +52,15 @@ LexSense addresses this by:
 
 | Layer | Technology |
 |---|---|
-| Frontend | [Add frontend framework/library here — e.g., React, Vue, Svelte] |
-| Graph Visualization | [Add graph library here — e.g., D3.js, Cytoscape.js, vis.js] |
-| Data Format | [Add format here — e.g., JSON, CSV, YAML] |
-| Styling | [Add CSS framework or approach here — e.g., Tailwind CSS, plain CSS] |
-| Build Tool | [Add build tool here — e.g., Vite, Webpack, Parcel] |
-| Deployment | [Add deployment platform here — e.g., GitHub Pages, Vercel, Netlify] |
-
-> **Note:** Replace the placeholders above with the actual technologies used in your project.
+| Frontend Framework | React 19 + TypeScript |
+| Graph Visualization | Cytoscape.js + react-cytoscapejs |
+| Styling | Tailwind CSS v4 |
+| Animations | Motion |
+| AI Integration | Google Gemini (`@google/genai`) |
+| Backend | Express.js |
+| Icons | Lucide React |
+| Build Tool | Vite 6 |
+| Data | JSON (`metadata.json`) |
 
 ---
 
@@ -65,59 +68,70 @@ LexSense addresses this by:
 
 ### Prerequisites
 
-- [Add prerequisite here — e.g., Node.js v18+ and npm]
-- [Add any other requirement here]
+- Node.js v18 or higher
+- npm
 
 ### Steps
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/[your-username]/lexsense.git
+git clone https://github.com/Shahad142/Lexsense.git
 
 # 2. Navigate into the project directory
-cd lexsense
+cd Lexsense
 
 # 3. Install dependencies
-[insert install command here — e.g., npm install]
+npm install
 
-# 4. Start the development server
-[insert start command here — e.g., npm run dev]
+# 4. Set up environment variables
+# Create a .env file in the root directory and add your Gemini API key:
+# VITE_GEMINI_API_KEY=your_api_key_here
+
+# 5. Start the development server
+npm run dev
 ```
 
-The application should now be running at `http://localhost:[port]`.
+The application will be running at `http://localhost:3000`.
+
+### Other Available Scripts
+
+```bash
+npm run build     # Build for production
+npm run preview   # Preview the production build
+npm run lint      # Type-check with TypeScript
+npm run clean     # Remove the dist folder
+```
 
 ---
 
 ## Usage
 
-1. **Open the app** in your browser after starting the development server.
+1. **Open the app** in your browser at `http://localhost:3000`.
 2. **Select a language** (English, Arabic, or French) using the language toggle.
 3. **Browse the knowledge graph** — nodes represent AI terms, and edges represent relationships between them.
 4. **Click a node** to open a detail panel showing the term's definition, contextual explanation, and any translation quality notes.
 5. **Explore connections** — follow edges to related terms and build a fuller picture of a concept.
 6. **Look for flagged terms** — terms marked with a warning indicator have translations that may be unclear or misleading, with notes explaining why.
+7. **Use AI explanations** — click the AI prompt option on any term to get a Gemini-powered elaboration in your selected language.
 
 ---
 
 ## Project Structure
 
 ```
-lexsense/
-├── public/                  # Static assets
-├── src/
-│   ├── data/                # Glossary dataset (terms, translations, relationships)
-│   ├── components/          # UI components (graph, term panel, language toggle, etc.)
-│   ├── graph/               # Graph logic and relationship mapping
-│   ├── locales/             # Language files (en, ar, fr)
-│   ├── styles/              # Global and component styles
-│   └── main.[js/ts]         # Application entry point
+Lexsense/
+├── src/                     # Application source code
+│   ├── components/          # React UI components
+│   ├── data/                # Glossary and graph data logic
+│   └── main.tsx             # Application entry point
+├── index.html               # HTML entry point
+├── metadata.json            # Multilingual glossary dataset
 ├── .gitignore
 ├── package.json
-├── README.md
-└── [config file]            # e.g., vite.config.js, webpack.config.js
+├── tsconfig.json
+├── vite.config.ts           # Vite build configuration
+└── README.md
 ```
-
-> **Note:** Adjust the structure above to match your actual project layout.
 
 ---
 
@@ -135,19 +149,20 @@ lexsense/
 - Successfully transformed a static, flat glossary into a fully interactive and navigable knowledge graph.
 - Delivered consistent multilingual support across English, Arabic (including RTL layout), and French.
 - Added a cultural and semantic layer that goes beyond machine translation — making technical AI concepts more accessible to a broader audience.
-- Built a clean, intuitive interface that remains informative without becoming complex.
+- Integrated Google Gemini to provide AI-powered contextual explanations within the interface.
+- Built a clean, intuitive interface with smooth animations that remains informative without becoming complex.
 
 ---
 
 ## Future Improvements
 
-- [ ] Expand the glossary to include more AI and machine learning terms.
-- [ ] Add a search/filter feature to quickly locate specific terms.
+- [ ] Expand the glossary to cover more AI and machine learning terms.
+- [ ] Add a search and filter feature to quickly locate specific terms.
 - [ ] Allow users to contribute corrections or suggest better translations.
 - [ ] Export graph views or term definitions as PDF or printable format.
 - [ ] Add support for additional languages (e.g., Spanish, Chinese).
-- [ ] Integrate an AI-powered explanation layer for dynamic, on-demand definitions.
 - [ ] Improve mobile responsiveness and touch-based graph navigation.
+- [ ] Add user authentication to support saved sessions and personalized bookmarks.
 
 ---
 
@@ -161,10 +176,21 @@ Contributions are welcome. If you'd like to improve the glossary, fix a translat
 4. Push to your branch: `git push origin feature/your-feature-name`
 5. Open a Pull Request.
 
-Please open an issue first if you plan to make significant changes, so we can discuss the approach before you invest time building it.
+Please open an issue first if you plan to make significant changes, so we can align on the approach before you invest time building it.
 
 ---
 
+## License
 
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## Contact
+
+**Shahad**
+- GitHub: [@Shahad142](https://github.com/Shahad142)
+
+---
 
 *Built to make AI knowledge more accessible — across languages and cultures.*
