@@ -32,7 +32,6 @@ LexSense addresses this by:
 - **Contextual Explanations** — Each term includes definitions, usage examples, and notes on semantic nuance.
 - **Translation Quality Flags** — Highlights terms where existing translations are considered unclear, misleading, or culturally imprecise.
 - **Term Relationships** — Explore how concepts connect to one another (e.g., *Neural Network → Deep Learning → Model*).
-- **AI-Powered Layer** — Integrates Google Gemini AI to support dynamic, context-aware explanations.
 - **Clean, Minimal UI** — Built with Tailwind CSS and smooth Motion animations for a polished, distraction-free experience.
 
 ---
