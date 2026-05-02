@@ -56,7 +56,6 @@ LexSense addresses this by:
 | Graph Visualization | Cytoscape.js + react-cytoscapejs |
 | Styling | Tailwind CSS v4 |
 | Animations | Motion |
-| AI Integration | Google Gemini (`@google/genai`) |
 | Backend | Express.js |
 | Icons | Lucide React |
 | Build Tool | Vite 6 |
