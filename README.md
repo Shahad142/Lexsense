@@ -30,7 +30,7 @@ LexSense addresses this by:
 - **Interactive Knowledge Graph** — Visualize AI terms and the relationships between them in an explorable graph interface powered by Cytoscape.js.
 - **Multilingual Support** — Full support for English, Arabic (RTL), and French, with language-aware display and layout.
 - **Contextual Explanations** — Each term includes definitions, usage examples, and notes on semantic nuance.
-- **Translation Quality Flags** — Highlights terms where existing translations are considered unclear, misleading, or culturally imprecise.
+- **Translation Quality Flags** — Highlights terms where existing translations are considered clear & Adopted / Needs Simplification / misleading
 - **Term Relationships** — Explore how concepts connect to one another (e.g., *Neural Network → Deep Learning → Model*).
 - **Clean, Minimal UI** — Built with Tailwind CSS and smooth Motion animations for a polished, distraction-free experience.
 
@@ -43,8 +43,6 @@ LexSense addresses this by:
 3. **Relationship Mapping** — Semantic and conceptual links between terms were defined to form a meaningful graph structure.
 4. **Graph Rendering** — The structured data is rendered as an interactive graph using Cytoscape.js via `react-cytoscapejs`, allowing users to click, explore, and navigate between terms.
 5. **Language Switching** — Users can toggle between supported languages; the graph and all annotations update accordingly.
-6. **AI Explanations** — Google Gemini provides on-demand, context-aware elaborations for selected terms.
-
 ---
 
 ## Tech Stack
@@ -81,11 +79,8 @@ cd Lexsense
 # 3. Install dependencies
 npm install
 
-# 4. Set up environment variables
-# Create a .env file in the root directory and add your Gemini API key:
-# VITE_GEMINI_API_KEY=your_api_key_here
 
-# 5. Start the development server
+# 4. Start the development server
 npm run dev
 ```
 
@@ -110,7 +105,6 @@ npm run clean     # Remove the dist folder
 4. **Click a node** to open a detail panel showing the term's definition, contextual explanation, and any translation quality notes.
 5. **Explore connections** — follow edges to related terms and build a fuller picture of a concept.
 6. **Look for flagged terms** — terms marked with a warning indicator have translations that may be unclear or misleading, with notes explaining why.
-7. **Use AI explanations** — click the AI prompt option on any term to get a Gemini-powered elaboration in your selected language.
 
 ---
 
@@ -147,7 +141,6 @@ Lexsense/
 - Successfully transformed a static, flat glossary into a fully interactive and navigable knowledge graph.
 - Delivered consistent multilingual support across English, Arabic (including RTL layout), and French.
 - Added a cultural and semantic layer that goes beyond machine translation — making technical AI concepts more accessible to a broader audience.
-- Integrated Google Gemini to provide AI-powered contextual explanations within the interface.
 - Built a clean, intuitive interface with smooth animations that remains informative without becoming complex.
 
 ---
@@ -161,26 +154,6 @@ Lexsense/
 - [ ] Add support for additional languages (e.g., Spanish, Chinese).
 - [ ] Improve mobile responsiveness and touch-based graph navigation.
 - [ ] Add user authentication to support saved sessions and personalized bookmarks.
-
----
-
-## Contributing
-
-Contributions are welcome. If you'd like to improve the glossary, fix a translation issue, or enhance the interface:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Make your changes and commit: `git commit -m "Add: brief description of change"`
-4. Push to your branch: `git push origin feature/your-feature-name`
-5. Open a Pull Request.
-
-Please open an issue first if you plan to make significant changes, so we can align on the approach before you invest time building it.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
