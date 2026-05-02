@@ -547,23 +547,9 @@
       "cultural_notes": "",
       "cultural_notes_ar": "",
       "tags": ["Models"],
-      "related": [60, 101, 107, 108]
+      "related": [60, 107, 108]
     },
-    {
-      "id": 101,
-      "en": "Deep Learning (DL)",
-      "ar": "تعلُّم عميق",
-      "fr": "Apprentissage profond",
-      "short_definition": "Neural networks with many layers.",
-      "explanation": "A subset of machine learning based on artificial neural networks with multiple layers (deep architectures) to model complex patterns in data.",
-      "explanation_ar": "مجال فرعي من تعلم الآلة يعتمد على الشبكات العصبية الاصطناعية ذات الطبقات المتعددة (المعماريات العميقة) لنمذجة الأنماط المعقدة في البيانات.",
-      "example": "",
-      "example_ar": "",
-      "translation_clarity": "clear",
-      "cultural_notes": "",
-      "cultural_notes_ar": "",
-      "related": [100, 72, 110]
-    },
+   
     {
       "id": 102,
       "en": "Large Language Model (LLM)",
@@ -578,7 +564,7 @@
       "cultural_notes": "",
       "cultural_notes_ar": "",
       "tags": ["LLM", "Models", "NLP"],
-      "related": [60, 103, 104, 109, 115]
+      "related": [60, 103, 104, 115]
     },
     {
       "id": 103,
@@ -610,21 +596,6 @@
       "cultural_notes_ar": "",
       "tags": ["NLP"],
       "related": [60, 102, 103]
-    },
-    {
-      "id": 105,
-      "en": "Computer Vision (CV)",
-      "ar": "رؤية الحاسب",
-      "fr": "Vision par ordinateur",
-      "short_definition": "AI interpreting visual data.",
-      "explanation": "A field of AI that trains computers to interpret and understand the visual world from digital images and videos.",
-      "explanation_ar": "مجال في الذكاء الاصطناعي يدرب الحواسيب على تفسير وفهم العالم البصري من الصور والفيديوهات الرقمية.",
-      "example": "Facial recognition systems use computer vision.",
-      "example_ar": "تستخدم أنظمة التعرف على الوجوه رؤية الحاسب.",
-      "translation_clarity": "clear",
-      "cultural_notes": "",
-      "cultural_notes_ar": "",
-      "related": [60, 11]
     },
     {
       "id": 106,
@@ -672,21 +643,6 @@
       "related": [100, 107]
     },
     {
-      "id": 109,
-      "en": "Generative AI",
-      "ar": "ذكاء اصطناعي توليدي",
-      "fr": "IA générative",
-      "short_definition": "AI that creates new content.",
-      "explanation": "A type of AI that can create new content, such as text, images, music, or code, based on the data it has been trained on.",
-      "explanation_ar": "نوع من الذكاء الاصطناعي يمكنه إنشاء محتوى جديد، مثل النصوص أو الصور أو الموسيقى أو الأكواد البرمجية، بناءً على البيانات التي تدرب عليها.",
-      "example": "",
-      "example_ar": "",
-      "translation_clarity": "clear",
-      "cultural_notes": "",
-      "cultural_notes_ar": "",
-      "related": [60, 102]
-    },
-    {
       "id": 110,
       "en": "Neural Network",
       "ar": "شبكة عصبية",
@@ -699,7 +655,7 @@
       "translation_clarity": "clear",
       "cultural_notes": "",
       "cultural_notes_ar": "",
-      "related": [72, 101, 111]
+      "related": [72,  111]
     },
     {
       "id": 111,
@@ -714,7 +670,7 @@
       "translation_clarity": "clear",
       "cultural_notes": "",
       "cultural_notes_ar": "",
-      "related": [110, 101]
+      "related": [110]
     },
     {
       "id": 112,
@@ -774,7 +730,7 @@
       "translation_clarity": "clear",
       "cultural_notes": "",
       "cultural_notes_ar": "",
-      "related": [109, 102]
+      "related": [ 102]
     },
     {
       "id": 116,
@@ -789,7 +745,7 @@
       "translation_clarity": "clear",
       "cultural_notes": "",
       "cultural_notes_ar": "",
-      "related": [60, 104, 109]
+      "related": [60, 104]
     },
     {
       "id": 117,
@@ -865,7 +821,7 @@
       "cultural_notes": "",
       "cultural_notes_ar": "",
       "tags": ["CV", "Neural Networks"],
-      "related": [110, 105]
+      "related": [110]
     },
     {
       "id": 122,
@@ -932,22 +888,6 @@
       "related": [60, 64]
     },
     {
-      "id": 126,
-      "en": "AI Safety",
-      "ar": "سلامة الذكاء الاصطناعي",
-      "fr": "Sécurité de l'IA",
-      "short_definition": "Field focused on preventing AI accidents.",
-      "explanation": "The study and practice of ensuring that AI systems act safely and avoid unintended or harmful consequences.",
-      "explanation_ar": "دراسة وممارسة ضمان عمل أنظمة الذكاء الاصطناعي بأمان وتجنب العواقب غير المقصودة أو الضارة.",
-      "example": "",
-      "example_ar": "",
-      "translation_clarity": "clear",
-      "cultural_notes": "Differentiated from 'Security'. Safety is about preventing accidents/unintended harm; Security is about preventing malicious intent.",
-      "cultural_notes_ar": "هناك فرق دقيق بين 'السلامة' (Safety) و'الأمن' (Security). السلامة تتعلق بتجنب الحوادث، بينما الأمن يتعلق بالحماية من الهجمات المتعمدة.",
-      "tags": ["Safety", "Alignment"],
-      "related": [61, 64, 65]
-    },
-    {
       "id": 127,
       "en": "Autoregressive Model",
       "ar": "نموذج الانحدار الذاتي",
@@ -961,7 +901,7 @@
       "cultural_notes": "",
       "cultural_notes_ar": "",
       "tags": ["LLM", "Probability"],
-      "related": [102, 109]
+      "related": [102]
     },
     {
       "id": 128,
@@ -977,7 +917,7 @@
       "cultural_notes": "'Normalization' is often translated to 'تطبيع'، but in some Arabic contexts 'تطبيع' has political connotations. 'معايرة' or 'تنميط' is safer.",
       "cultural_notes_ar": "كلمة 'Normalization' تترجم تقنياً إلى 'تطبيع'، إلا أن الكلمة قد تحمل دلالات سياسية في بعض المجتمعات العربية؛ لذا يفضل البعض استخدام 'معايرة' أو 'تنميط'.",
       "tags": ["Optimization"],
-      "related": [110, 101]
+      "related": [110 ]
     },
     {
       "id": 129,
@@ -1137,7 +1077,7 @@
       "cultural_notes": "",
       "cultural_notes_ar": "",
       "tags": ["CV", "Annotation"],
-      "related": [105]
+      "related": [102]
     },
     {
       "id": 139,
@@ -1197,7 +1137,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["Neural Networks", "Continuous Learning"],
-      "related": [110, 101]
+      "related": [110]
     },
     {
       "id": 143,
@@ -1240,20 +1180,6 @@
       "translation_clarity": "clear",
       "tags": ["Clustering", "ML"],
       "related": [108]
-    },
-    {
-      "id": 146,
-      "en": "Chain of Thought (CoT)",
-      "ar": "تسلسل الأفكار",
-      "fr": "Chaîne de pensée",
-      "short_definition": "AI showing its step-by-step reasoning.",
-      "explanation": "A prompting technique used to encourage Large Language Models to generate a sequence of intermediate reasoning steps before providing a final answer.",
-      "explanation_ar": "تقنية تلقين تُستخدم لتشجيع النماذج اللغوية الكبيرة على توليد سلسلة من خطوات الاستدلال الوسيطة قبل تقديم الإجابة النهائية.",
-      "example": "Asking an AI to 'think step by step' leads to chain-of-thought reasoning.",
-      "example_ar": "طلب 'التفكير خطوة بخطوة' من الذكاء الاصطناعي يؤدي إلى استدلال بتسلسل الأفكار.",
-      "translation_clarity": "clear",
-      "tags": ["LLM", "Prompt Engineering"],
-      "related": [115, 102]
     },
     {
       "id": 147,
@@ -1467,7 +1393,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["LLM", "Data"],
-      "related": [102, 109, 134]
+      "related": [102, 134]
     },
     {
       "id": 162,
@@ -1483,7 +1409,7 @@
       "cultural_notes": "'تكميم' is a formal Arabic word but is often associated with silencing (like 'gagging' an opponent). In physics and AI, it refers to 'Quantization'.",
       "cultural_notes_ar": "كلمة 'تكميم' نادراً ما تُستخدم في الحياة اليومية وقد تُفهم بمعنى 'إسكات' (تكميم الأفواه)، لكنها المصطلح الفيزيائي والتقني الصحيح لـ Quantization.",
       "tags": ["Optimization", "Deployment"],
-      "related": [100, 101]
+      "related": [100]
     },
     {
       "id": 163,
@@ -1497,21 +1423,7 @@
       "example_ar": "يستخدم نموذج Mistral 8x7B معمارية خليط من الخبراء.",
       "translation_clarity": "clear",
       "tags": ["LLM", "Deep Learning"],
-      "related": [102, 101]
-    },
-    {
-      "id": 164,
-      "en": "Fine-tuning",
-      "ar": "ضبط دقيق",
-      "fr": "Réglage fin / Fine-tuning",
-      "short_definition": "Training a pre-trained model on specific data.",
-      "explanation": "The process of taking a pre-trained model and training it further on a smaller, task-specific dataset to improve its performance for that task.",
-      "explanation_ar": "عملية أخذ نموذج مدرب مسبقاً وتدريبه بشكل إضافي على مجموعة بيانات أصغر مخصصة لمهمة معينة لتحسين أدائه في تلك المهمة.",
-      "example": "",
-      "example_ar": "",
-      "translation_clarity": "clear",
-      "tags": ["Training", "ML"],
-      "related": [100, 101, 19]
+      "related": [102]
     },
     {
       "id": 165,
@@ -1525,7 +1437,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["Optimization", "LLM"],
-      "related": [164, 102]
+      "related": [ 102]
     },
     {
       "id": 166,
@@ -1553,7 +1465,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["GAN", "Deep Learning"],
-      "related": [168, 109]
+      "related": [168]
     },
     {
       "id": 168,
@@ -1567,7 +1479,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["GAN", "Generative AI"],
-      "related": [167, 109]
+      "related": [167]
     },
     {
       "id": 169,
@@ -1637,7 +1549,7 @@
       "example_ar": "نماذج Gemini و GPT-4o هي نماذج متعددة الأنماط.",
       "translation_clarity": "clear",
       "tags": ["LLM", "Foundations"],
-      "related": [60, 102, 105, 104]
+      "related": [60, 102,  104]
     },
     {
       "id": 174,
@@ -1709,7 +1621,7 @@
       "example_ar": "استخدام نموذج مدرب على التعرف على السيارات للمساعدة في التعرف على الشاحنات.",
       "translation_clarity": "clear",
       "tags": ["Foundations", "ML"],
-      "related": [100, 164]
+      "related": [100]
     },
     {
       "id": 179,
@@ -1737,7 +1649,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["Optimization", "Deep Learning"],
-      "related": [111, 101, 110]
+      "related": [111, 110]
     },
     {
       "id": 181,
@@ -1751,7 +1663,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["Neural Networks", "Training"],
-      "related": [110, 101]
+      "related": [110]
     },
     {
       "id": 182,
@@ -1779,7 +1691,7 @@
       "example_ar": "نماذج GPT مبنية على معمارية المحولات.",
       "translation_clarity": "clear",
       "tags": ["LLM", "Deep Learning"],
-      "related": [101, 102, 110]
+      "related": [ 102, 110]
     },
     {
       "id": 184,
@@ -1849,7 +1761,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["LLM", "Optimization"],
-      "related": [102, 109, 114]
+      "related": [102, 114]
     },
     {
       "id": 189,
@@ -1863,7 +1775,7 @@
       "example_ar": "درجة الحرارة 0 تؤدي إلى نصوص محددة؛ درجة الحرارة 1 تؤدي إلى شعر إبداعي.",
       "translation_clarity": "clear",
       "tags": ["LLM", "Hyperparameter"],
-      "related": [102, 171, 109]
+      "related": [102, 171]
     },
     {
       "id": 190,
@@ -2045,7 +1957,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["Evaluation", "Safety"],
-      "related": [100, 122, 126]
+      "related": [100, 122]
     },
     {
       "id": 203,
@@ -2087,7 +1999,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["Foundations", "Deep Learning"],
-      "related": [100, 101]
+      "related": [100]
     },
     {
       "id": 206,
@@ -2175,7 +2087,7 @@
       "cultural_notes": "Literal translation from gardening (pruning trees), which works well in a technical context in Arabic too.",
       "cultural_notes_ar": "ترجمة مستوحاة من البستنة (تقليم الأشجار)، وهي تعمل بشكل جيد في السياق التقني العربي أيضاً.",
       "tags": ["Optimization", "Deployment"],
-      "related": [162, 101]
+      "related": [162]
     },
     {
       "id": 212,
@@ -2205,7 +2117,7 @@
       "cultural_notes": "'هندسة الأوامر' is very common, but 'تلقين' is technically more accurate for 'prompt'.",
       "cultural_notes_ar": "'هندسة الأوامر' شائعة جداً، لكن 'تلقين' هي الأكثر دقة تقنياً لمصطلح 'Prompt'.",
       "tags": ["LLM", "UX"],
-      "related": [115, 146, 102]
+      "related": [115, 102]
     },
     {
       "id": 214,
@@ -2219,7 +2131,7 @@
       "example_ar": "تم تدريب Llama 3 مسبقاً على تريليونات الرموز.",
       "translation_clarity": "clear",
       "tags": ["Foundations", "Training"],
-      "related": [164, 184, 100]
+      "related": [184, 100]
     },
     {
       "id": 215,
@@ -2307,7 +2219,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["CV"],
-      "related": [105, 138, 11]
+      "related": [ 138, 11]
     },
     {
       "id": 221,
@@ -2377,7 +2289,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["Neural Networks", "Deep Learning"],
-      "related": [110, 101]
+      "related": [110]
     },
     {
       "id": 226,
@@ -2517,7 +2429,7 @@
       "example_ar": "تحديد الخطوط الدقيقة للأشجار في صورة فضائية.",
       "translation_clarity": "clear",
       "tags": ["CV"],
-      "related": [105, 138, 220]
+      "related": [138, 220]
     },
     {
       "id": 236,
@@ -2545,7 +2457,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["Neural Networks", "Deep Learning"],
-      "related": [110, 225, 101]
+      "related": [110, 225]
     },
     {
       "id": 238,
@@ -2603,7 +2515,7 @@
       "example_ar": "تعد نماذج Llama 3 و Claude نماذج أساسية.",
       "translation_clarity": "clear",
       "tags": ["LLM", "Foundations"],
-      "related": [102, 101, 214]
+      "related": [102, 214]
     },
     {
       "id": 242,
@@ -2631,7 +2543,7 @@
       "example_ar": "ذكاء اصطناعي يقرأ مقالاً إخبارياً ويشرحه بكلماته الخاصة.",
       "translation_clarity": "clear",
       "tags": ["NLP", "Generative AI"],
-      "related": [104, 242, 109]
+      "related": [104, 242]
     },
     {
       "id": 244,
@@ -2645,7 +2557,7 @@
       "example_ar": "",
       "translation_clarity": "clear",
       "tags": ["Optimization", "Deep Learning"],
-      "related": [180, 111, 101]
+      "related": [180, 111]
     },
     {
       "id": 245,
@@ -2731,7 +2643,7 @@
       "cultural_notes": "In Arabic, 'تسرب' usually means 'leakage', but in the context of Dropout it refers to the 'dropping out' of neurons. Some prefer 'تعطيل عشوائي'.",
       "cultural_notes_ar": "كلمة 'إسقاط' أو 'تعطيل عشوائي' هي الأدق تقنياً، حيث أن 'تسرب' قد توحي بمعاني أخرى مثل تسرب البيانات (Data Leakage).",
       "tags": ["Neural Networks", "Optimization"],
-      "related": [110, 112, 101]
+      "related": [110, 112]
     }
   ]
-}
+} 
