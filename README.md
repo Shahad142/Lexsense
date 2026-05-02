@@ -189,6 +189,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 **Majd**
 - GitHub: [@majdalsahali0705](https://github.com/majdalsahali0705)
+  
 **Shahad**
 - GitHub: [@Shahad142](https://github.com/Shahad142)
 
